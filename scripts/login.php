@@ -1,8 +1,4 @@
-<html>
-<body>
-
-Welcome <?php echo $_POST["user"]; ?><br>
-Your email address is: <?php echo $_POST["pass"]; ?>
-
-</body>
-</html>
+<?php 
+    echo $_POST["user"];
+    echo $_POST["pass"]; 
+?>
