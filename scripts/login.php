@@ -1,4 +1,6 @@
 <?php 
-    echo $_POST["user"];
-    echo $_POST["pass"]; 
+    session_start();
+    $_SESSION["user"] = $_POST["user"];
+    $_SESSION["pass"] = $_POST["pass"]; 
+    //header("Location:../test.php");
 ?>

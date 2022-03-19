@@ -3,7 +3,7 @@
 <head>
     <!--Header stuff-->
     <meta charset="UTC-8">
-    <title>Login</title>
+    <title>Create Account</title>
     <link rel="icon" href="images/icon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -18,7 +18,7 @@
 </head>
 <body>
    <div class="row login-title justify-content-center">
-	   <h4>Login Form</h4>
+	   <h4>Create Account</h4>
    </div>
    <form action="scripts/login.php" method="post">
 	   <div class="login-form">
@@ -30,12 +30,12 @@
 			   <label for="password" class="col-sm-2 col-form-label">Password:</label>
 			   <input type="password" class="form-control col-sm-9" id="passwordBox" name="pass" placeholder="Enter your password here">
 		   </div>
+           <div class="form-group row">
+               <label for="password" class="col-sm-2 col-form-label">Reenter password:</label>
+               <input type="password" class="form-control col-sm-9" id="passwordBox" name="checkPass" placeholder="Reenter password here">
+           </div>
 		   <div class="row">
-			   <div class="col-sm-1"></div>
-			   <div class="col-sm-2">
-				   <a href="createAcc.html" style="color: black;">Create account?</a>
-				</div>
-			   <div class="col-sm-2"></div>
+			   <div class="col-sm-5"></div>
 			   <button type="submit" class="btn col-sm-2">Submit</button>
 		   </div>
 	   </div>
