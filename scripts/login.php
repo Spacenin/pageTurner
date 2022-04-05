@@ -14,7 +14,7 @@
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
             if ($row["username"] == $_SESSION["user"]) {
-                if ($row["userpass"] == hashPass($_SESSION["pass"])) {
+                if ($row["userpass"] == hashPass($_SESSION["pass"], $_SESSION["user"])) {
 
                     $found = true;
                 }

@@ -8,13 +8,13 @@
         die("Check passwords!");
     }
 
-    $sql = "INSERT INTO userID (join_date, username, userpass) VALUES (NOW(), \"" . $_POST["user"] . "\" , \"" . hashPass($_POST["pass"]) . "\");";
+    $sql = "INSERT INTO userID (join_date, username, userpass) VALUES (NOW(), \"" . $_POST["user"] . "\" , \"" . hashPass($_POST["pass"], $_POST["user"]) . "\");";
 
     if ($_SESSION["dbconn"]->query($sql) == true) {
         echo "Success!";
     }
 
     else {
-        echo "Nope...";
+        echo $_SESSION["dbconn"]->error;
     }
 ?>
