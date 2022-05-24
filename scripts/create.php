@@ -11,7 +11,7 @@
     $sql = "INSERT INTO userID (join_date, username, userpass) VALUES (NOW(), \"" . $_POST["user"] . "\" , \"" . hashPass($_POST["pass"], $_POST["user"]) . "\");";
 
     if ($_SESSION["dbconn"]->query($sql) == true) {
-        echo "Success!";
+        header('Location: ../home.php');
     }
 
     else {

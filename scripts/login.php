@@ -22,7 +22,7 @@
         }
 
         if ($found) {
-            echo "You're clear!";
+            header("Location: ../home.php");
         }
 
         else {
