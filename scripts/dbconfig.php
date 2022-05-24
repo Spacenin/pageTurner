@@ -1,4 +1,5 @@
 <?php require "secrets.php";
+    //Setup variables and connection for database
     session_start();
 
     $dbuser = "root";

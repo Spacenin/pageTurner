@@ -1,10 +1,12 @@
 <?php session_start(); ?>
+<!--This is the site to edit the toRead list of books-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <!--Header stuff-->
     <meta charset="UTC-8">
-    <title>Booklist</title>
+    <title>Books to Read</title>
     <link rel="icon" href="images/icon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -17,6 +19,7 @@
     <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
+    <!--Navbar-->
     <ul>
         <li><a href="home.php">Home</a></li>
         <li><a href="reading.php">Reading</a></li>

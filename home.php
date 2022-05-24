@@ -1,4 +1,6 @@
 <?php session_start(); ?>
+<!--This is the home site that users enter upon logging in-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +19,7 @@
     <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
+    <!--Navbar-->
     <ul>
         <li><a id="active" href="">Home</a></li>
         <li><a href="reading.php">Reading</a></li>
