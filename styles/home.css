@@ -27,6 +27,9 @@ li a:hover {
 
 #name {
     float: right;
+    display: block;
+    padding: 10px 18px;
     text-align: center;
+    text-decoration: none;
     color: white;
 }

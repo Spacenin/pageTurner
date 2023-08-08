@@ -28,6 +28,8 @@
         <li id="name">
             <span>Hello <?php echo $_SESSION["user"]; ?>!</span>
         </li>
-    </ul> 
+    </ul>
+    
+    
 </body>
 </html>
